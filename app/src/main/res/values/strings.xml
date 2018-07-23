@@ -3,4 +3,5 @@
     <string name="image_view_contentdesc">ImageView for canvas</string>
     <string name="keep_tapping">Keep tapping.</string>
     <string name="done">Done!</string>
+    <string name="title_activity_draw_donut">DrawDonut</string>
 </resources>
