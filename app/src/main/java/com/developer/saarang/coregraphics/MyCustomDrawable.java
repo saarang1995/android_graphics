@@ -17,7 +17,7 @@ public class MyCustomDrawable extends Drawable {
     private Paint paint;
     private int X, Y;
     private Canvas canvas;
-    private  Path hole_path;
+    private  Path hole_path = new Path();
     public MyCustomDrawable(Context context) {
         this.context = context;
     }
@@ -58,7 +58,7 @@ public class MyCustomDrawable extends Drawable {
     protected void onBoundsChange(Rect bounds) {
        if(bounds!=null) {
            // cut biscuit at the center
-           hole_path = new Path();
+
            hole_path.reset();
            hole_path.addCircle(X + width / 2, Y + height / 2, width / 6, Path.Direction.CW);
 
