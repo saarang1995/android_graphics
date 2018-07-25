@@ -9,6 +9,7 @@ public class OpenGLLearning extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         customGLSurfaceView = new CustomGLSurfaceView(this);
+        customGLSurfaceView.requestRender();
         setContentView(customGLSurfaceView);
     }
 }
